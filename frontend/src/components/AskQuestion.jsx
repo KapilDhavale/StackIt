@@ -24,7 +24,7 @@ const AskQuestion = () => {
 
   const { title, description, tags } = formData;
 
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+  const API_BASE_URL = process.env.REACT_APP_BASE_URL;
 
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
